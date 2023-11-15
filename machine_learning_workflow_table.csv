@@ -1,0 +1,15 @@
+Workflow Step,Linear Regression,Logistic Regression,Decision Tree
+Install Libraries,"import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression","import numpy as np
+import pandas as pd
+from sklearn.linear_model import LogisticRegression","import numpy as np
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier"
+Download Dataset,df = pd.read_csv('data.csv'),df = pd.read_csv('data.csv'),df = pd.read_csv('data.csv')
+Data Preprocessing,"Data cleaning, normalization, splitting",Same as Linear Regression,Same as Linear Regression
+Feature Engineering,Feature selection techniques,Same as Linear Regression,Same as Linear Regression
+Define Model,model = LinearRegression(),model = LogisticRegression(),model = DecisionTreeClassifier()
+Train Model,"model.fit(X_train, y_train)","model.fit(X_train, y_train)","model.fit(X_train, y_train)"
+Visualize Results,Plotting predictions,"ROC curve, confusion matrix",Decision tree plot
+Interpret Results,"Coefficients, R² value","Coefficients, accuracy","Decision paths, feature importance"
